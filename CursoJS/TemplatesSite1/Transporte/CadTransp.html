@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD// XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml11-strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type"
+        content="text/html; charset=iso-8859-1" />
+        <title>Transporte</title>
+</head>
+<script>
+function redirect(valor){
+if(valor=="Van"){
+	location.href="CadVan.html";
+}
+if(valor=="Onibus"){
+	location.href="CadOnibus.html";
+}
+if(valor=="Táxi"){
+	location.href="CadTaxi.html";
+}
+if(valor=="Moto Táxi"){
+	location.href="CadMotoTaxi.html";
+}
+if(valor=="Avião"){
+	location.href="CadAviao.html";
+}
+}
+</script>
+<body>
+<h2> Cadastro de Transportes</h2>
+<table width="300" border="0">
+   <tr>
+    <td>Tipo de Transporte:</td>
+    <td>
+		<p> 
+          <select id="beans" name="beans">
+            <option value="Onibus">Onibus</option> 
+            <option value="Van">Van</option>
+            <option value="Táxi">Táxi</option>
+            <option value="Moto Táxi">Moto Táxi</option>
+            <option value="Avião">Avião</option>                  
+          </select>
+         </p> 
+  </tr>
+</table>
+     </form>                  
+        <p>
+          <input type="submit" value="Proximo" onclick="redirect(document.getElementById('beans').value)" />
+		  <input type="submit" value="Cancelar" onclick=" location.href= 'Transportes.html';" />		
+        </p>      
+        </form>
+<from method="post" action="/wwwroot/proxima.php" id="formprox">
+   
+</body>
+
+</html>
+</html>

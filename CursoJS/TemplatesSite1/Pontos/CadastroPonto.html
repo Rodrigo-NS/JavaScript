@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD// XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml11-strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type"
+        content="text/html; charset=iso-8859-1" />
+        <title>Ponto de Interesse</title>
+</head>
+<script>
+function redirect(valor){
+if(valor=="turistico"){
+	location.href="CadTuristico.html";
+}
+if(valor=="hotelaria"){
+	location.href="CadHotelaria.html";
+}
+if(valor=="evento"){
+	location.href="CadEvento.html";
+}
+if(valor=="entretenimento"){
+	location.href="CadEntretenimento.html";
+}
+if(valor=="alimenticio"){
+	location.href="CadAlimenticio.html";
+}
+
+
+}
+</script>
+        <body>
+        <h2> Cadastro</h2>
+        <table width="300" border="0">
+          <tr>
+            <td>Empresa:</td>
+            <td><input size="40px" type;TEXT name="name" value = "Prefeitura Municipal de Joinville" disabled = "disabled" </td>
+          </tr>
+          <tr>
+            <td>CNPJ:</td>
+            <td><input  type;TEXT name="cnpj" value = "999999999999999" disabled = "disabled" ></td></td>
+          </tr>
+          <tr>
+            <td>Telefone:</td>
+            <td><input size="15px"  type;TEXT name="telefone"</td></td>
+          </tr>
+          <tr>
+            <td>Endereço</td>
+            <td><input size="50px" type;TEXT name="endereco" </td></td>
+          </tr>
+          <tr>
+            <td>Bairro</td>
+            <td><input type;TEXT name="bairro"</td></td> 
+          </tr>
+          <tr>
+            <td>Cidade:</td>
+            <td><input type;TEXT name="cidade" </td></td>
+          </tr>
+        </table>
+       	<from method="post" action="/wwwroot/proxima.php" id="formprox">
+          <p> Ramo de Atividade:
+          <select id="beans" name="beans">
+            <option value="turistico">Turistico</option>
+            <option value="hotelaria">Hotelaria</option>
+            <option value="evento">Evento</option>
+            <option value="entretenimento">Entretenimento</option>
+            <option value="alimenticio">Alimenticio</option>       
+          </select>
+         </p> 
+         </form>                  
+        <p>
+          <input type="submit" value="Proxima" onclick="redirect(document.getElementById('beans').value)" />
+		  <input type="submit" value="Cancelar" onclick=" location.href= '../TelaPrincipal.html';" />	         
+        </p>
+       
+        </form>
+</body>
+
+</html>
+</html>

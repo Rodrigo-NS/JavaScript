@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+      <meta charset=UTF-8 />
+      <title>Cadastro Exercicio</title>
+   </head>
+   <body> <!-- Corpo do documento --> 
+      <h2>Cadastro Exercicio 20</h2>
+      <form class="form" action="" method="get"> <!-- <form> Formulário --> 
+        <table>
+            <!--  
+            <tr>
+                <td>CNPJ:</td>
+                <td><input  type;TEXT name="cnpj" value = "123459999999999" disabled = "disabled" ></td>
+                </td>
+             </tr>
+             -->
+             <tr> <!-- <tr> = Linha de uma tabela --> 
+                <td>Nome:</td> <!-- <td> = Célula de uma tabela -->
+                <td><input size="20px"  type;TEXT class="nome"></td>
+             </tr>
+             <tr>
+                <td>Sobrenome</td>
+                <td><input size="30px" type;TEXT class="sobrenome"></td>
+             </tr>
+             <tr>
+                <td>Peso:</td>
+                <td><input size="05px" type;TEXT class="peso"></td>
+             </tr>
+             <tr>
+                <td>Altura:</td>
+                <td><input size="05px" type;TEXT class="altura"></td>
+             </tr>
+
+          </table>
+          <p>
+            <button>Enviar</button>
+          </p>
+          
+          <!-- <p> = Parágrafo -->
+          <!-- <p> 
+            Ramo de Atividade:
+            <select id="beans" name="beans"> option	=> Opção de uma caixa de seleção (select)
+               <option value="turistico">Turistico</option>
+               <option value="hotelaria">Hotelaria</option>
+               <option value="evento">Evento</option>
+               <option value="entretenimento">Entretenimento</option>
+               <option value="alimenticio">Alimenticio</option>
+            </select>
+         </p>
+        <p>
+         <input type="submit" value="Proxima" onclick="redirect(document.getElementById('beans').value)" />
+         <input type="submit" value="Cancelar" onclick=" location.href= '../TelaPrincipal.html';" />	         
+         </p>-->
+
+      </form>
+      <div class="resultado"></div>
+      <script src="js/script.js"></script>
+       <!-- 
+      <script>
+        function redirect(valor){
+        if(valor=="turistico"){
+            location.href="CadTuristico.html";
+        }
+        if(valor=="hotelaria"){
+            location.href="CadHotelaria.html";
+        }
+        if(valor=="evento"){
+            location.href="CadEvento.html";
+        if(valor=="entretenimento"){
+            location.href="CadEntretenimento.html";
+        }
+        if(valor=="alimenticio"){
+            location.href="CadAlimenticio.html";
+        }
+        }
+        </script> -->
+   </body>
+</html>

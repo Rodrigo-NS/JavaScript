@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD// XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml11-strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type"
+        content="text/html; charset=iso-8859-1" />
+        <title>Transporte</title>
+</head>
+<script>
+function redirect(valor){
+if(valor=="turistico"){
+	location.href="CadTuristico.html";
+}
+if(valor=="hotelaria"){
+	location.href="CadHotelaria.html";
+}
+if(valor=="evento"){
+	location.href="CadEvento.html";
+}
+if(valor=="entretenimento"){
+	location.href="CadEntretenimento.html";
+}
+if(valor=="alimenticio"){
+	location.href="CadAlimenticio.html";
+}
+}
+</script>
+<body>
+<h2> Cadastro Van</h2>
+        <table width="300" border="0">
+          <tr>
+            <td>Codigo:</td>
+            <td><input size="15px" type;TEXT name="codigo"</td>
+          </tr>
+          <tr>
+            <td>Descrição:</td>
+            <td><input size="50px" type;TEXT name="descricao"></td></td>
+          </tr>
+            <td>Numero Passageiros:</td>
+            <td><input size="10px" type;TEXT name="numero"></td></td>
+          </tr>
+          <tr>
+            <td>Nome Responsavél:</td>
+            <td><input size="50px" type;TEXT name="descricao"></td></td>
+          </tr>
+          <tr>
+            <td>Taxa:</td>
+            <td><input type;TEXT name="taxa"</td></td>
+          </tr>
+        </table>         
+       <p>
+          <input type="submit" value="Salvar" onclick="redirect(document.getElementById('beans').value)" />
+          <input type="submit" value="Voltar" onclick=" location.href= 'CadTransp.html';" />
+          <input type="submit" value="Cancelar" />
+        </p>
+       
+        </form>
+</body>
+
+</html>
+</html>
