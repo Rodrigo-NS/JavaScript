@@ -1,2 +1,6 @@
-
-Novo(a) Documento de Texto.txt
+.vscode
+temporario
+*.bak
+*.rar
+*.zip
+*.project
