@@ -1,7 +1,7 @@
-let {readFile, writeFile} = require('fs');
+let { readFile, writeFile } = require("fs");
 
 readFile("arquivo.txt", "utf8", (error, texto) => {
-  if(error) {
+  if (error) {
     throw error;
   } else {
     console.log(texto);
@@ -9,11 +9,9 @@ readFile("arquivo.txt", "utf8", (error, texto) => {
 });
 
 writeFile("arquivo.txt", "Texto por write file", (error) => {
-
-  if(error) {
+  if (error) {
     throw error;
   } else {
     console.log("Escreveu com sucesso!");
   }
-
 });
